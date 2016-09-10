@@ -25,8 +25,6 @@ bool comptan(point & a, point & b)
 
 ld area()
 {
-  // for(int i = 0 ; i < triangle.size() ; ++i)
-  //   cout << triangle[i] << " <--- Triangle\n";
   ld acum=0;
   for(int i = 0 ; i < 3 ; ++i)
     {

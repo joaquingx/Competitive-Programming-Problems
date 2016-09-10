@@ -29,7 +29,7 @@ int main()
 	  iy = i;
 	  ans = i - pnt + 1;
 	}
-    }
+    
   cout << ans << "\n";
   for(int i = 0 ; i < n ; ++i)
   {
