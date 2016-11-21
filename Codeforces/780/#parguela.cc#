@@ -1,0 +1,35 @@
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+
+ll factbig(ll n)
+{
+  ll ans =-1;
+  while(n > 1)
+    {
+      // cout << n << "\n";
+      ll i;
+      for(i = 2; i*i <= n ; ++i)
+	{
+	  if(n % i == 0)
+	    {
+	      n = n/i;
+	      ans = max(ans,i);
+	      break;
+	    }
+	}
+      if(i*i > n)
+	{
+	  ans = max(ans,n);
+	  n = 1;
+	}
+    }
+  return ans;
+}
+
+int main()
+{
+  ll n; cin >> n;
+  cout << factbig(n) << "\n";  
+  return 0;
+}

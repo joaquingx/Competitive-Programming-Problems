@@ -52,8 +52,8 @@ int bs(int ini , int fin )
   while(fin - ini > 0)
     {
       ++cc;
-      if(cc > 90)
-	return -1;
+      // if(cc > 90)
+      // 	return -1;
       int mid = (fin + ini)/2;
       if(!sepuede(mid))
 	ini =  mid + 1;
